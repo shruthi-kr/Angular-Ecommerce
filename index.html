@@ -1,0 +1,596 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <title>Body Glove Mobile®</title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap and Font Awesome css -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Css animations  -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Theme stylesheet, if possible do not edit this stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- Custom stylesheet - for your changes -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Responsivity for older IE -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
+
+    <!--Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/components/product/controller.js"></script>
+    <script src="app/components/product/customdirective.js"></script>
+    <script src="app/components/product/model.js"></script>
+    <script src="app/components/product/service.js"></script>
+</head>
+
+<body>
+    <div id="all">
+        <header>
+            <!-- *** TOP ***
+            _________________________________________________________ -->
+            <div id="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="social">
+                                <a class="external FELLOWESBRAND" data-animate-hover="pulse" href='http://www.fellowes.com'><img src='http://assets.fellowes.com/images/logos/cobrand-fellowesbrand.png' alt='FellowesBrand'></a>
+                                <a class="external BODYGLOVE" data-animate-hover="pulse" href='http://www.bodyglove.com/'><img src='http://assets.fellowes.com/images/logos/cobrand-bodyglove.png' alt='BodyGlove'></a>
+                                <a class="external OPTRIX" data-animate-hover="pulse" href='http://www.optrix.com/'><img src='http://assets.fellowes.com/images/logos/cobrand-ptrix.png' alt='Optrix'></a>
+                                <a class="external EXOLENS" data-animate-hover="pulse" href='http://exolens.com/'><img src='http://assets.fellowes.com/images/logos/cobrand-exolens.png' alt='Exolens'></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *** TOP END *** -->
+            <!-- *** NAVBAR ***
+            _________________________________________________________ -->
+
+            <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+                <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+                    <div class="container">
+                        <div class="navbar-header">
+
+                            <a class="navbar-brand home" href="index.html">
+                                <img src="http://assets.bodyglovemobile.com/images/logos/BodyGlove-Logo.png" alt="Body Glove logo" class="hidden-xs hidden-sm">
+                                <img src="http://assets.bodyglovemobile.com/images/logos/BodyGlove-Logo.png" alt="Body Glove logo" class="visible-xs visible-sm"><span class="sr-only">Body Glove - go to homepage</span>
+                            </a>
+                            <div class="navbar-buttons">
+                                <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <i class="fa fa-align-justify"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--/.navbar-header -->
+
+                        <div class="navbar-collapse collapse" id="navigation">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                                <li class="dropdown use-yamm yamm-fw active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DEVICES<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <img src="img/template-easy-customize.png" class="img-responsive hidden-xs" alt="">
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <h5>Shortcodes</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="template-accordions.html">Accordions</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-alerts.html">Alerts</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-buttons.html">Buttons</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-content-boxes.html">Content boxes</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-blocks.html">Horizontal blocks</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-pagination.html">Pagination</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-tabs.html">Tabs</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-typography.html">Typography</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <h5>Header variations</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="template-header-default.html">Default sticky header</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-header-nosticky.html">No sticky header</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="template-header-light.html">Light header</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown use-yamm yamm-fw">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CASES <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <img src="img/template-homepage.png" class="img-responsive hidden-xs" alt="">
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <h5>Portfolio</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="portfolio-2.html">2 columns</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-no-space-2.html">2 columns with negative space</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-3.html">3 columns</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-no-space-3.html">3 columns with negative space</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-4.html">4 columns</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-no-space-4.html">4 columns with negative space</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-detail.html">Portfolio - detail</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-detail-2.html">Portfolio - detail 2</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <h5>About</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="about.html">About us</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="team.html">Our team</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="team-member.html">Team member</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="services.html">Services</a>
+                                                            </li>
+                                                        </ul>
+                                                        <h5>Marketing</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="packages.html">Packages</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">CLEARANCE</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!--/.nav-collapse -->
+
+
+
+                        <div class="collapse clearfix" id="search">
+
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+
+                                        <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                                    </span>
+                                </div>
+                            </form>
+
+                        </div>
+                        <!--/.nav-collapse -->
+
+                    </div>
+
+
+                </div>
+                <!-- /#navbar -->
+
+            </div>
+
+            <!-- *** NAVBAR END *** -->
+
+        </header>
+
+        <div class="row">
+            <div class="col-md-12">
+                <img alt="Clearance" src="http://assets.fellowes.com/images/misc/banner_iphone6.png" style="width: 100%">
+            </div>
+        </div>
+        <div id="content" ng-app="myApp">
+            <div class="container">
+
+                <div class="row">
+
+
+                    <!-- *** LEFT COLUMN ***
+                    _________________________________________________________ -->
+
+                    <div class="col-sm-3">
+
+                        <!-- *** MENUS AND FILTERS ***
+                        _________________________________________________________ -->
+
+                        <div class="panel panel-default sidebar-menu">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Brands</h3>
+                                <!--<a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> <span class="hidden-sm">Clear</span></a>-->
+                            </div>
+
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Armani (10)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Versace (12)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Carlo Bruni (15)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Jack Honey (14)
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default sidebar-menu">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Devices</h3>
+                                <!--<a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> <span class="hidden-sm">Clear</span></a>-->
+                            </div>
+
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Armani (10)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Versace (12)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Carlo Bruni (15)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Jack Honey (14)
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default sidebar-menu">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Case Type</h3>
+                                <!--<a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> <span class="hidden-sm">Clear</span></a>-->
+                            </div>
+
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Armani (10)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Versace (12)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Carlo Bruni (15)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Jack Honey (14)
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default sidebar-menu">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title clearfix">Colours</h3>
+                                <!--<a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> <span class="hidden-sm">Clear</span></a>-->
+                            </div>
+
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour white"></span> White (14)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour blue"></span> Blue (10)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour green"></span> Green (20)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour yellow"></span> Yellow (13)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour red"></span> Red (10)
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default sidebar-menu">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Protection Features</h3>
+                                <!--<a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> <span class="hidden-sm">Clear</span></a>-->
+                            </div>
+
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Armani (10)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Versace (12)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Carlo Bruni (15)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Jack Honey (14)
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <!-- *** MENUS AND FILTERS END *** -->
+
+                    </div>
+                    <!-- /.col-md-3 -->
+                    <!-- *** LEFT COLUMN END *** -->
+                    <!-- *** RIGHT COLUMN ***
+                    _________________________________________________________ -->
+
+                    <div class="col-sm-9" ng-controller="ProductListCtrl">
+
+                        <p class="text-muted lead"></p>
+
+                        <div class="row products">
+                            <div class="col-md-4 col-sm-6" ng-repeat="product in products">
+                                <product-details obj="product"></product-details>
+                            </div>
+                        </div>
+                        <!-- /.products -->
+                        <!--<div class="row">
+
+                            <div class="col-md-12 banner">
+                                <a href="#">
+                                    <img src="img/banner2.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+
+                        </div>-->
+
+
+                        <div class="pages">
+
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#">&laquo;</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">&raquo;</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!-- /.col-md-9 -->
+                    <!-- *** RIGHT COLUMN END *** -->
+
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+        <!-- *** FOOTER ***
+        _________________________________________________________ -->
+
+        <footer id="footer">
+            <div class="container">
+                <div class="col-md-12 col-sm-12">
+                    Copyright © 2015 Fellowes, Inc. All Rights Reserved.  |  Terms of Use   |  Privacy Policy   |  Cookies Policy   |  Legal
+                </div>
+                <!-- /.col-md-3 -->
+            </div>
+
+        </footer>
+		<!-- 
+		Prototype:
+		Developed by: Shruthi KR
+		Email id: cshruthi.kr@gmail.com
+		-->
+        <!-- /#footer -->
+		
+        <!-- *** FOOTER END *** -->
+        <!-- *** COPYRIGHT ***
+        _________________________________________________________ -->
+    </div>
+    <!-- /#all -->
+    <!-- #### JAVASCRIPT FILES ### -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/front.js"></script>
+
+</body>
+
+</html>
